@@ -1,0 +1,6 @@
+.vscode
+Backend/myenv/__pycache__
+Backend/myenv/Lib/
+Backend/myenv/pyvenv.cfg
+Backend/myenv/Scripts/
+Backend/myenv/share/

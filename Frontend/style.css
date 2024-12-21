@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(219, 215, 202);
+
+}
+
+.heading{
+    width: 100vw;
+    padding: 20px;
+    /* border: 1px solid red; */
+}
+.heading-text{
+    text-align: center;
+    font-size: 40px;
+}
+
+.flex{
+    display: flex;
+    gap: 50px;
+    padding: 0 20px;
+    margin: auto;
+}
+.layout{
+    /* border: 1px solid black; */
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: black;
+    width: 60vw;
+    left: 0;
+    padding: 0 3%;
+}
+
+.traffic-card{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    padding-top: 10px;
+    background-color: rgb(201, 70, 70);
+}
+.traffic-card-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.traffic-light-flex{
+    width: 60px;
+    display: flex;
+    margin: auto;
+    padding: 4px;
+    border-radius: 20px ;
+    justify-content: space-between;
+}
+
+.traffic-light{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(47, 47, 47);
+}
+.traffic-image-container{
+    border: 1px solid black;
+    width: 90%;
+    height: 85%;
+    margin: 5px auto;
+    
+}
+.traffic-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.traffic-road-name{
+    background-color:rgb(201, 70, 70);
+    text-align: center;
+    color: white;
+}
+
+.info-layout{
+    padding: 0 10px;
+}
+.info-heading{
+    text-align: center;
+    margin: 0 auto 10px;
+}
+.info-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.countdown-layout{
+    padding: 10px;
+    font-size: 20px;
+}
+.countdown-layout h2{
+    text-align: center;
+}
+#displayCountdown{
+    font-size: 50px;
+    color: rgb(68, 141, 84);
+}
+
+#simulateBtn{
+    background-color: rgb(231, 0, 0);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    border-style: solid;
+    border-color: brown;
+    border-radius: 10px;
+    box-shadow: 0 0 0 0;
+}

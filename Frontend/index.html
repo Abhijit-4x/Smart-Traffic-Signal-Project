@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <h1 class="heading-text">Smart Traffic Management Simulation</h1>
+    </div>
+
+    <div class="flex" > 
+      <div class="layout">
+
+        <div id="road1" class="traffic-card">  <!-- This is the North road - 1 -->
+          <!-- <div class="traffic-light-flex">     This was for traffic-light representation
+            <div class="traffic-light"></div>
+            <div class="traffic-light"></div>
+          </div> -->
+          <div class="traffic-image-container">
+            <img
+              class="traffic-image"
+              src="resources/traffic1.jpg"
+              alt="Image-of-traffic"
+            />
+          </div>
+          <h3 id="roadn1" class="traffic-road-name">North Road</h3>
+        </div>
+        <div class="traffic-card-flex"> 
+          <div id="road4" class="traffic-card">   <!-- This is the West road - 4 -->
+            <div class="traffic-image-container">  
+              <img
+                class="traffic-image"
+                src="resources/traffic4.jpg" 
+                alt="Image-of-traffic"
+              />
+            </div>
+            <h3 id="roadn4" class="traffic-road-name">West Road</h3>
+          </div>
+          <div class="countdown-layout">   <!-- This is the Countdown at the center -->
+            <h2 class="countdown">Countdown</h2>
+            <h2 id="displayCountdown">00</h2>
+          </div>
+          <div id="road2" class="traffic-card">   <!-- This is the East road - 2 -->
+            <div class="traffic-image-container">
+              <img
+                class="traffic-image"
+                src="resources/traffic2.jpg"
+                alt="Image-of-traffic"
+              />
+            </div>
+            <h3 id="roadn2" class="traffic-road-name">East Road</h3>
+          </div>
+        </div>
+        <div id="road3" class="traffic-card">   <!-- This is the South road - 3 -->
+          <div class="traffic-image-container">
+            <img
+              class="traffic-image"
+              src="resources/traffic3.jpg"
+              alt="Image-of-traffic"
+            />
+          </div>
+          <h3 id="roadn3" class="traffic-road-name">South Road</h3>
+        </div>
+
+      </div>
+      <div class="info-layout">
+        <h1 class="info-heading">Status</h1>
+        <div class="info-items">
+          <h2>Processed Time for the Signal : <span id="displayProcessedTime" >--</span>s</h2>
+          <h2>No. of detected Cars : <span id="displayCars" >--</span></h2>
+          <h2>No. of detected Buses/Trucks : <span id="displayBuses" >--</span></h2>
+          <h2>No. of detected Bikes/Cycles : <span id="displayBikes" >--</span></h2>
+          <button id="simulateBtn" >Simulate</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+<!-- DO NOT RUN LIVE SERVER AND BACKEND WITH SINGLE VS CODE WINDOW (IT INTERFERES WITH LIVE SERVER AND CAUSES INFINITE RELOAD), INSTEAD USE SEPARATE WINDOW -->
